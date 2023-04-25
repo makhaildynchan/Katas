@@ -1,5 +1,8 @@
-// Create a function named urlEncode that will receive a string of words, and return that string with all of the whitespace characters converted to %20. If there is whitespace on the outside of the string, like in our second example above, you should only replace the whitespace within the string.
-
+// We need to write a function called whereCanIPark() that returns the coordinates of an available parking spot for the vehicle, or returns false if there is no available spot. Our function receives an array of arrays representing parking spots, and a string with type of the vehicle that is looking for a parking spot.
+// Regular cars can only park in R spots.
+// Small cars can park in R or S spots.
+// Motorcycles can park in R, S, or M spots.
+// In the array of parking spots, spots are written in both lower-case and upper-case. An upper-case letter means that the particular spot is AVAILABLE, while lower-case letters mean that the spot is UNAVAILABLE.
 const whereCanIPark = function(spots, vehicle) {
   // Code here!
   for (let y = 0; y < spots.length; y++) {
